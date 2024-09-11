@@ -46,7 +46,9 @@ function calcular() {
     // alert('Resultado: ' + resultado);
     var paragrafoResultado = document.getElementById('resultado');
     var textoParagrafo = document.createTextNode('Resultado: ' + resultado);
+    
     if (!paragrafoResultado) { // resultado === null || resultado === undefined
+        
         paragrafoResultado = document.createElement('p');
         paragrafoResultado.setAttribute('id', 'resultado');
         paragrafoResultado.appendChild(textoParagrafo);

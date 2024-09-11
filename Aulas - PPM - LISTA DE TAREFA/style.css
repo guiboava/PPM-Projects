@@ -1,0 +1,42 @@
+div{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 10px;
+}
+
+input{
+    width: 500px;
+}
+
+section{
+    margin: 1%;
+    border-style: double;
+    border-color: black;
+}
+ol{
+    margin: 5%;
+}
+li{
+    margin: 1%;
+    display: flexbox;
+    justify-content: baseline;
+    gap: 1rem;
+    color: red; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-style: double;
+    border-color: black;
+}
+button{
+    margin: 5px;
+    display: flexbox;
+    justify-content: baseline;
+    gap: 1rem;
+    color: Grey; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-style: double;
+    border-color: black;
+}
+
