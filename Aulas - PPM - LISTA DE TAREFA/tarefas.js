@@ -1,21 +1,12 @@
 var tarefa = document.getElementById("insertTarefa");
 var section = document.getElementsByTagName("section")[0];
 var listaTarefa = document.getElementById("listaTarefa");
-
-document.getElementById("insertTarefa").addEventListener("keydown",function(event){
-    if(event.key === 'Enter'){
-        event.preventDefault();
-        adicionarLista();
-    }
-    });
-
-
 var id = 1;
 
 function adicionarLista() {
 
-    if(!tarefa.value){
-        if(!window.confirm("Campo de tarefa em branco.")){
+    if (!tarefa.value) {
+        if (!window.confirm("Campo de tarefa em branco.")) {
             return;
         }
     }
@@ -36,18 +27,25 @@ function adicionarLista() {
     deleteButton.textContent = "Deletar";
     deleteButton.setAttribute('id', id);
     deleteButton.setAttribute('class', 'buttonLi{');
-    deleteButton.setAttribute("onclick","deletarItem(id)");
+    deleteButton.setAttribute("onclick", "deletarItem(id)");
     itemTarefa.appendChild(deleteButton);
 
     id++;
     return;
 
 }
-function deletarItem(id){
-    if(window.confirm("Este item será deletado de forma permanente!")){
+function deletarItem(id) {
+    if (window.confirm("Este item será deletado de forma permanente!")) {
         document.getElementById(id).remove();
     }
 
     return;
 }
+
+document.getElementById("insertTarefa").addEventListener("keydown", function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        adicionarLista();
+    }
+});
 

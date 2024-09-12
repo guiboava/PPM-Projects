@@ -4,24 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcular idade</title>
+    <title>Verificar Maioridade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div>
-        <h1>Digite sua data de nascimento</h1>
+        <h1>Digite sua idade </h1>
     </div>
-
     <div>
+
         <section>
-            <div>
-                <input type="date" id="inputIdade">
-                <button onclick="calcularIdade()">Calcular Idade</button>
-            </div>
+            <input onchange="verificarIdade()" type="date" id="inputDate">
         </section>
     </div>
-    <script src="calcularIdade.js"></script>
+    <script src="verificarIdade.js"></script>
 </body>
 
 </html>
