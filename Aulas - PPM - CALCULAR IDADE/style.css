@@ -1,0 +1,19 @@
+div{
+    display: flex;
+    grid: 3cap;
+    justify-content: center;
+}
+button{
+    width: ;
+    height: 125%;
+    background-color: crimson;
+    color: black;
+    border-style: double;
+    border-radius: 5%
+    
+}
+input{
+    height: 120%;
+    width: 200px;
+    font-size: x-large;
+}
